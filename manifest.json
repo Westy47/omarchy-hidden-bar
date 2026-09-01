@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "hugog.hidden-bar",
+  "name": "Hidden Bar",
+  "version": "0.1.0",
+  "author": "hugog",
+  "description": "Hide chosen bar widgets and reveal them on hover, like macOS hidden bar.",
+  "license": "MIT",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "HiddenBar.qml"
+  },
+  "barWidget": {
+    "displayName": "Hidden bar",
+    "description": "Caches chosen bar widgets under a hover-to-reveal handle.",
+    "category": "Layout",
+    "allowMultiple": true,
+    "defaults": {
+      "revealIcon": "\uf103",
+      "hideDelayMs": 600,
+      "hiddenWidgets": []
+    },
+    "schema": [
+      {
+        "key": "hiddenWidgets",
+        "type": "list",
+        "itemType": "string",
+        "label": "Widgets to hide",
+        "defaultValue": [],
+        "description": "Ids of bar widgets to collapse, e.g. omarchy.bluetooth, omarchy.network"
+      },
+      {
+        "key": "revealIcon",
+        "type": "string",
+        "label": "Reveal handle icon",
+        "defaultValue": "\uf103"
+      },
+      {
+        "key": "hideDelayMs",
+        "type": "integer",
+        "label": "Delay before hiding (ms)",
+        "min": 0,
+        "max": 3000,
+        "step": 100,
+        "defaultValue": 600
+      }
+    ]
+  }
+}
