@@ -5,7 +5,7 @@ import "HiddenBarModel.js" as HiddenBarModel
 
 BarWidget {
   id: root
-  moduleName: "hugog.hidden-bar"
+  moduleName: "westy47.hidden-bar"
 
   property var hiddenIds: []
   property string revealIcon: "\uf103"

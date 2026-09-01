@@ -15,7 +15,7 @@ delay.
 Install the plugin from git (no configuration is overwritten):
 
 ```bash
-omarchy plugin add https://github.com/<owner>/omarchy-hidden-bar.git --enable
+omarchy plugin add https://github.com/Westy47/omarchy-hidden-bar.git --enable
 ```
 
 Then add the hidden-bar entry to the desired section of `~/.config/omarchy/shell.json`
@@ -24,7 +24,7 @@ clock stores `format`):
 
 ```json
 {
-  "id": "hugog.hidden-bar",
+  "id": "westy47.hidden-bar",
   "hiddenWidgets": ["omarchy.bluetooth", "omarchy.network"],
   "revealIcon": "\uf103",
   "hideDelayMs": 600
@@ -40,11 +40,11 @@ The shell hot-reloads `shell.json` on save. If a change doesn't apply, run
 ## Remove
 
 ```bash
-omarchy plugin disable hugog.hidden-bar
-omarchy plugin remove hugog.hidden-bar
+omarchy plugin disable westy47.hidden-bar
+omarchy plugin remove westy47.hidden-bar
 ```
 
-Then remove the `hugog.hidden-bar` entry from `~/.config/omarchy/shell.json`
+Then remove the `westy47.hidden-bar` entry from `~/.config/omarchy/shell.json`
 and restart the shell: `omarchy restart shell`.
 
 ## Settings
@@ -76,6 +76,6 @@ when its `activeItem.visible` is `false`, so hidden widgets take no space.
 ## Validate
 
 ```bash
-node ~/.config/omarchy/plugins/hugog.hidden-bar/tests/model.test.js
-omarchy plugin validate ~/.config/omarchy/plugins/hugog.hidden-bar
+node ~/.config/omarchy/plugins/westy47.hidden-bar/tests/model.test.js
+omarchy plugin validate ~/.config/omarchy/plugins/westy47.hidden-bar
 ```

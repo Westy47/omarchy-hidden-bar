@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "hugog.hidden-bar",
+  "id": "westy47.hidden-bar",
   "name": "Hidden Bar",
   "version": "0.1.0",
-  "author": "hugog",
+  "author": "Westy47",
   "description": "Hide chosen bar widgets and reveal them on hover, like macOS hidden bar.",
   "license": "MIT",
   "kinds": [
